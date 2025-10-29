@@ -1,0 +1,148 @@
+/* Color principal o desde que se inicia por primera vez */
+:root{
+	--bg-color   : #ffffff;
+	--text-color : #000000;
+	--link-color : #244cce;
+	--table-bg   : #f3f2fd;
+	--table-border:#a9a9a9;
+	--bg-t-color  :#f3f8f9;
+}
+/* Color cuando se cambia a modo oscuro */
+body.dark{
+	--bg-color   : #1e1e1e;
+	--text-color : #ffffff;
+	--link-color : #87cefa;
+	--table-bg   : #2a2a2a;
+	--table-border:#555;
+	--bg-t-color  :#323537;
+}
+
+/*Para los Text y TextField*/
+	.field{
+		background-color: var(--table-bg);
+		border-color: var(--table-border);
+		color: var(--text-color);
+		transition: background 0.6s, border 0.4s, color 0.4s;
+		height: 24px;
+		width: 500px;
+	}
+	.lbl1{
+		font-size: 20px;
+		font-family: sans-serif;
+	}
+	.c{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		align-items: center;
+	}
+/* Para los botones */
+	.par2{
+		border: 5px solid var(--table-border);
+		background-color: var(--bg-t-color);
+		color: var(--text-color);
+		transition: background 0.6s, border 0.4s, color 0.4s; 
+		font-family: sans-serif;
+		font-weight: bold;
+		cursor: pointer;
+		font-size: 20px;
+		height: 60px;
+		width: 300px;
+	}
+
+/*Para las tablas*/
+	.body{
+		background-color: var(--bg-color);
+		color: var(--text-color);
+		transition: background 0.6s, color 0.4s;
+		text-align: center;
+		font-family: sans-serif;
+	}
+	.tabla{
+		margin-top: 20px;
+		text-align: center;
+		font-weight: bold;
+		background-color: var(--table-bg);
+		color: var(--text-color);
+		border: 3px solid var(--table-border);
+		transition: background-color 0.6s ease, color 0.5s ease;
+	}
+	
+	.tab2{
+		margin-top: 20px;
+		text-align: center;
+		font-weight: bold;
+		background-color: var(--bg-t-color);
+		color: var(--text-color);
+		border: 3px solid var(--table-border);
+		transition: background-color 0.6s ease, color 0.5s ease;
+	}
+	a{
+		color:var(--link-color);
+	}
+
+/* Para el cambio de tema */
+	.switch{
+		margin-left: 25%;
+		position: relative;
+		width: 60px;
+		height: 30px;
+		border: 4px solid rgb(134, 145, 109);
+		display: flex;
+		border-radius: 35px;
+	}
+	.checkbox{
+		display: none;
+	}
+	.slider{
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		margin-top: 3px;
+		margin-left: 4px;
+		background-color: aliceblue;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+		color: rgb(red, green, blue);
+	}
+	input:checked+.slider{
+		translate: 29px;
+		background-color: rgb(3, 2, 33);
+		color: aliceblue;
+		transition: all 0.4s ease;
+	}
+	.slider{
+		transition: all 0.4s ease;
+	}  
+	body.dark {
+    background-color: #1e1e1e; 
+    color: #ffffff;
+    transition: background-color 0.6s ease, color 0.5s ease;
+  	}
+
+  body.light {
+    background-color: #ffffff;
+    color: #000000;
+	transition: background-color 0.6s ease, color 0.5s ease;
+   }
+
+	#lbl_toggle{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		font-size: 15px;
+		color: rgb(18, 12, 64);
+		cursor: pointer;
+	}
+
+/* Para el botón de menú */
+	#Regresar{
+		position: absolute;
+		font-size: 35px;
+		top: 12px;
+		left: 20px;
+		cursor: pointer;
+	}
+	
