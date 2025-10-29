@@ -70,12 +70,33 @@
         <input class="field" type="text" name="nombre" id="inputnombre" placeholder="Su nombre" required ></input></p>
       <p><label class="lbl1">Nombre:</label>
         <input class="field" type="text" name="nombre" id="inputnombre" placeholder="Su nombre" required ></input></p>
+      <p><button class="par2" type="submit"> Registrar </button></p>
     </td>
   </table>
         </form>
 
 <?php
-?>
+include('conexion/conexion.php');
+if((isset($_POST['nombre']) && !empty($_POST['nombre']))
+&& (isset($_POST['nombre']) && !empty($_POST['nombre']))
+&& (isset($_POST['nombre']) && !empty($_POST['nombre']))
+&& (isset($_POST['nombre']) && !empty($_POST['nombre']))
+&& (isset($_POST['nombre']) && !empty($_POST['nombre']))
+&& (isset($_POST['nombre']) && !empty($_POST['nombre']))){
+  $nombre = $_POST['nombre'];
+  $nombre = $_POST['nombre'];
+  $nombre = $_POST['nombre'];
+  $nombre = $_POST['nombre'];
+  $nombre = $_POST['nombre'];
+  $nombre = $_POST['nombre'];
+
+  $query = " INSERT INTO 'clientes' (nombre, nombre, nombre, nombre, nombre, nombre)
+                             VALUES ('$nombre','$nombre','$nombre','$nombre','$nombre')";
+    $result = mysqli_query($connection, $query);
+    echo "<script>alert('Se ha realizado el registro')</script>";
+  } ?>
+
+</table>
 
 </body>
 </html>
